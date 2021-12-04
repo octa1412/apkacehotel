@@ -132,6 +132,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 	// configuration variables
 	private static String ASWV_URL          = SmartWebView.ASWV_URL;
+	private static String ASWV_URL_ADMIN    = SmartWebView.ASWV_URL_ADMIN;
+	private static String ASWV_URL_MEMBER   = SmartWebView.ASWV_URL_USER;
 	private String CURR_URL                 = ASWV_URL;
 	private static String ASWV_SEARCH       = SmartWebView.ASWV_SEARCH;
 	private static String ASWV_SHARE_URL    = SmartWebView.ASWV_SHARE_URL;
@@ -471,6 +473,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			//Rendering the default URL
 			Log.d("MAIN INTENT",ASWV_URL);
 			aswm_view(ASWV_URL, false, asw_error_counter);
+
+			String admin = get_cookies("adminCookie");
+			String member = get_cookies("memberCookie");
+
+			if(admin != "" && admin != "0"){
+				CURR_URL = ASWV_URL_ADMIN;
+				aswm_view(ASWV_URL_ADMIN, false, asw_error_counter);
+				Log.d("COOKIES: ", "admin");
+			} else if(member != "" && member != "0"){
+				CURR_URL = ASWV_URL_MEMBER;
+				aswm_view(ASWV_URL_MEMBER, false, asw_error_counter);
+				Log.d("COOKIES: ", "member");
+			} else {
+				aswm_view(ASWV_URL, false, asw_error_counter);
+				Log.d("COOKIES: ", "home");
+			}
+
 		}
 
 		if(ASWP_ADMOB) {
@@ -861,7 +880,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 	//Reloading current page
 	public void pull_fresh(){
-    	aswm_view((!CURR_URL.equals("")?CURR_URL:ASWV_URL),false, asw_error_counter);
+		aswm_view((!CURR_URL.equals("")?CURR_URL:ASWV_URL),false, asw_error_counter);
+		Log.d("TOKEN_REFRESHED ", "token");
+
+		CookieManager cookieManager = CookieManager.getInstance();
+		Log.d("COOKIES: ", cookieManager.getCookie(ASWV_URL));
+		Log.d("COOKIES: admin ", get_cookies("adminCookie"));
+		Log.d("COOKIES: memebr ", get_cookies("memberCookie"));
+
+//		String admin = get_cookies("adminCookie");
+//		String member = get_cookies("memberCookie");
+//
+//		if(admin != "" && admin != "0"){
+//			CURR_URL = ASWV_URL_ADMIN;
+//			aswm_view((!CURR_URL.equals("")?CURR_URL:ASWV_URL_ADMIN),false, asw_error_counter);
+//			Log.d("COOKIES: ", "admin");
+//		} else if(member != "" && member != "0"){
+//			CURR_URL = ASWV_URL_MEMBER;
+//			aswm_view((!CURR_URL.equals("")?CURR_URL:ASWV_URL_MEMBER),false, asw_error_counter);
+//			Log.d("COOKIES: ", "member");
+//		} else {
+//			aswm_view((!CURR_URL.equals("")?CURR_URL:ASWV_URL),false, asw_error_counter);
+//			Log.d("COOKIES: ", "home");
+//
+//		}
+
+
+
 	}
 
 	//Getting device basic information

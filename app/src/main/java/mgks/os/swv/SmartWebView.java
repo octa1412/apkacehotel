@@ -44,6 +44,8 @@ class SmartWebView {
 
 	// URL configs
 	static String ASWV_URL            = "https://sevenstars-indonesia.com/index.php/login";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
+	static String ASWV_URL_ADMIN      = "https://sevenstars-indonesia.com/index.php/data_member";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
+	static String ASWV_URL_USER       = "https://sevenstars-indonesia.com/index.php/home";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
 	static String ASWV_SEARCH         = "https://www.google.com/search?q=";         // search query will start by the end of the present string
 	static String ASWV_SHARE_URL      = ASWV_URL + "?share=";                       // URL where you process external content shared with the app
 
