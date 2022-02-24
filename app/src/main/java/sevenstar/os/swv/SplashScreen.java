@@ -1,9 +1,11 @@
-package mgks.os.swv;
+package sevenstar.os.swv;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import sevenstar.os.swv.R;
 
 public class SplashScreen extends Activity {
 

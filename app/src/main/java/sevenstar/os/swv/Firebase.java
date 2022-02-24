@@ -1,4 +1,4 @@
-package mgks.os.swv;
+package sevenstar.os.swv;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
+import sevenstar.os.swv.R;
 
 import com.google.firebase.messaging.RemoteMessage;
 import com.google.firebase.messaging.FirebaseMessagingService;

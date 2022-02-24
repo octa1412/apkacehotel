@@ -1,4 +1,4 @@
-package mgks.os.swv;
+package sevenstar.os.swv;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -8,13 +8,12 @@ import android.view.View;
 
 import java.util.Date;
 
-import static mgks.os.swv.DialogManager.create;
-import static mgks.os.swv.PreferenceHelper.getInstallDate;
-import static mgks.os.swv.PreferenceHelper.getIsAgreeShowDialog;
-import static mgks.os.swv.PreferenceHelper.getLaunchTimes;
-import static mgks.os.swv.PreferenceHelper.getRemindInterval;
-import static mgks.os.swv.PreferenceHelper.isFirstLaunch;
-import static mgks.os.swv.PreferenceHelper.setInstallDate;
+import static sevenstar.os.swv.PreferenceHelper.getInstallDate;
+import static sevenstar.os.swv.PreferenceHelper.getIsAgreeShowDialog;
+import static sevenstar.os.swv.PreferenceHelper.getLaunchTimes;
+import static sevenstar.os.swv.PreferenceHelper.getRemindInterval;
+import static sevenstar.os.swv.PreferenceHelper.isFirstLaunch;
+import static sevenstar.os.swv.PreferenceHelper.setInstallDate;
 
 public final class AppRate {
 
@@ -184,7 +183,7 @@ public final class AppRate {
 
     private void showRateDialog(Activity activity) {
         if (!activity.isFinishing()) {
-            create(activity, options).show();
+            DialogManager.create(activity, options).show();
         }
     }
 

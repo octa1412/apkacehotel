@@ -1,4 +1,4 @@
-package mgks.os.swv;
+package sevenstar.os.swv;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

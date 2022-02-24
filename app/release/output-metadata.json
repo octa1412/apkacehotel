@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "mgks.os.swv",
+  "applicationId": "sevenstar.sevenstar",
   "variantName": "processReleaseResources",
   "elements": [
     {

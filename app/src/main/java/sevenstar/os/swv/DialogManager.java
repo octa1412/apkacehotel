@@ -1,4 +1,4 @@
-package mgks.os.swv;
+package sevenstar.os.swv;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -16,14 +16,16 @@ import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-import static mgks.os.swv.IntentHelper.createIntentForAmazonAppstore;
-import static mgks.os.swv.IntentHelper.createIntentForGooglePlay;
-import static mgks.os.swv.PreferenceHelper.setAgreeShowDialog;
-import static mgks.os.swv.PreferenceHelper.setRemindInterval;
-import static mgks.os.swv.UriHelper.getAmazonAppstore;
-import static mgks.os.swv.UriHelper.getGooglePlay;
-import static mgks.os.swv.UriHelper.isPackageExists;
-import static mgks.os.swv.Utils.getDialogBuilder;
+import sevenstar.os.swv.R;
+
+import static sevenstar.os.swv.IntentHelper.createIntentForAmazonAppstore;
+import static sevenstar.os.swv.IntentHelper.createIntentForGooglePlay;
+import static sevenstar.os.swv.PreferenceHelper.setAgreeShowDialog;
+import static sevenstar.os.swv.PreferenceHelper.setRemindInterval;
+import static sevenstar.os.swv.UriHelper.getAmazonAppstore;
+import static sevenstar.os.swv.UriHelper.getGooglePlay;
+import static sevenstar.os.swv.UriHelper.isPackageExists;
+import static sevenstar.os.swv.Utils.getDialogBuilder;
 
 final class DialogManager {
 

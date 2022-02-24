@@ -10,7 +10,7 @@
     android:paddingRight="0dip"
     android:paddingTop="0dip"
     android:paddingBottom="0dip"
-	tools:context="MainActivity"
+	tools:context="sevenstar.os.swv.MainActivity"
     android:background="@color/colorPrimary">
     <RelativeLayout
         android:id="@+id/msw_welcome"
