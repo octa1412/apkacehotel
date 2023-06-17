@@ -25,9 +25,9 @@ class SmartWebView {
 	static boolean ASWP_PULLFRESH     = true;         // pull refresh current url
 	static boolean ASWP_PBAR          = true;         // show progress bar in app
 	static boolean ASWP_ZOOM          = false;        // zoom control for webpages view
-	static boolean ASWP_SFORM         = false;        // save form cache and auto-fill information
+	static boolean ASWP_SFORM         = true;        // save form cache and auto-fill information
 	static boolean ASWP_OFFLINE       = false;        // whether the loading webpages are offline or online
-	static boolean ASWP_EXTURL        = true;         // open external url with default browser instead of app webview
+	static boolean ASWP_EXTURL        = false;         // open external url with default browser instead of app webview
 
 	static boolean ASWP_TAB           = true;         // instead of default browser, open external URLs in chrome tab
 	static boolean ASWP_ADMOB         = true;         // to load admob or not
@@ -43,18 +43,19 @@ class SmartWebView {
 	static int ASWV_LAYOUT            = 0;            // default=0; for clear fullscreen layout, and =1 for drawer layout
 
 	// URL configs
-	static String ASWV_URL            = "https://sevenstars-indonesia.com/index.php/login";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
+	static String ASWV_URL            = "https://abcprivilegeclub.com/testing_acehotel/index.php/loginuser";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
+//	static String ASWV_URL            = "https://sevenstars-indonesia.com/index.php/login";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
 	static String ASWV_URL_ADMIN      = "https://sevenstars-indonesia.com/index.php/data_member";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
 	static String ASWV_URL_USER       = "https://sevenstars-indonesia.com/index.php/home";//"https://apps.mgks.dev/swv/?android=true";  		// complete URL of your website or offline webpage "file:///android_asset/offline.html";
 	static String ASWV_SEARCH         = "https://www.google.com/search?q=";         // search query will start by the end of the present string
 	static String ASWV_SHARE_URL      = ASWV_URL + "?share=";                       // URL where you process external content shared with the app
 
 	// domains allowed to be opened inside webview
-	static String ASWV_EXC_LIST       = "github.com";       //separate domains with a comma (,)
+	static String ASWV_EXC_LIST       = "github.com, accounts.google.com, accounts.google.co.id, sandbox.ipaymu.com";       //separate domains with a comma (,)
 
 	// custom user agent defaults
-	static boolean POSTFIX_USER_AGENT       = true;         // set to true to append USER_AGENT_POSTFIX to user agent
-	static boolean OVERRIDE_USER_AGENT      = false;        // set to true to use USER_AGENT instead of default one
+	static boolean POSTFIX_USER_AGENT       = false;         // set to true to append USER_AGENT_POSTFIX to user agent
+	static boolean OVERRIDE_USER_AGENT      = true;        // set to true to use USER_AGENT instead of default one
 	static String USER_AGENT_POSTFIX        = "SWVAndroid"; // useful for identifying traffic, e.g. in Google Analytics
 	static String CUSTOM_USER_AGENT         = "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Mobile Safari/537.36";    // custom user-agent
 

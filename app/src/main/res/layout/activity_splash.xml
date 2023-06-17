@@ -22,7 +22,7 @@
 		android:layout_margin="1dp"
 		android:gravity="center"
 		android:layout_centerInParent="true"
-		android:text="Welcome Back To Sevenstars"
+		android:text="Loading..."
 		android:textColor="#FFFFFF"
 		android:textSize="35dp"/>
 

@@ -253,6 +253,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+		Log.d(">>>>>>>>>CREATE: ", ASWV_URL);
+
 		// ------ PLAY AREA :: for debug purposes only ------ //
 
 		// ------- PLAY AREA END ------ //
@@ -1301,3 +1303,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         asw_view.restoreState(savedInstanceState);
     }
 }
+
+

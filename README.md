@@ -159,7 +159,7 @@ ASWV_LAYOUT      = 0;   // default=0; for clear fullscreen layout and 1 to add d
 ASWV_SEARCH      = "https://www.google.com/search?q=";   // search query will start by the end of the present string
 
 ASWV_SHARE_URL   = ASWV_URL+"?share=";   // URL where you process external content shared with the app
-ASWV_EXC_LIST    = "";                   // domains allowed to be opened inside webview, separate domains with a comma (,)
+ASWV_EXC_LIST    = "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&access_type=online&client_id=166111118733-9u055jkuq1ald16q76o6053vk0qs5ged.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fabcprivilegeclub.com%2Ftesting_acehotel%2Findex.php%2Floginuser&state&scope=email%20profile&approval_prompt=auto&service=lso&o2v=1&flowName=GeneralOAuthFlow";                   // domains allowed to be opened inside webview, separate domains with a comma (,)
 
 ASWV_ADMOB       = "ca-app-pub-9276682923792397~7957851075";   // your unique publishers ID; this one is temporary
 
